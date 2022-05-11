@@ -26,4 +26,4 @@ handler.help = ['buscaranime | animeinfo *texto*']
 handler.tags = ['anime']
 handler.command = /^(animeinfo|buscaranime|infoanime|animebuscar)$/i
 //maapin fatur :<
-module.exports = handler
+module.exports = handler 
