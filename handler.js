@@ -754,7 +754,7 @@ global.dfail = (type, m, conn) => {
         private: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo se puede usar en el chat privado!!*_\n_*¡¡This command can only be used in private chatc',
         admin: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Este comando es solo para Administradores!!*_\n_*¡¡This command is for Administrators only!!*_',
         botAdmin: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Haz que el bot sea Administrador para usar este comando!!*_\n_*¡¡Make the bot an Admin to use this command!!*_',
-        unreg: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n*Regístrese para usar esta función escribiendo:*\n*#daftar nombres.edad*\n*Ejemplo: #daftar GataDios.18*\n\n*Sign up to use this feature by typing:*\n*#daftar name.age*\n*Example: #daftar GataDios.18*',
+        unreg: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n*Regístrese para usar esta función escribiendo:*\n*#registrar nombres.edad*\n*Ejemplo: #registrar GataDios.18*\n\n*Sign up to use this feature by typing:*\n*#daftar name.age*\n*Example: #daftar GataDios.18*',
         restrict: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n_*¡¡Esta función está *deshabilitada | disable!!*_\n_*¡¡This feature is disabled | disable!!*_'
     }[type]
     if (msg) return m.reply(msg)
