@@ -15,16 +15,14 @@ let handler = async function (m, { text, usedPrefix }) {
   user.regTime = + new Date
   user.registered = true
   let sn = createHash('md5').update(m.sender).digest('hex')
-  m.reply(conn.sendBut(m.chat, `
-╰⊱💚⊱ *𝙀́𝙓𝙄𝙏𝙊 | 𝙎𝙐𝘾𝘾𝙀𝙎𝙎* ⊱💚⊱╮
+  m.reply(conn.sendBut(m.chat, `╰⊱💚⊱ *𝙀́𝙓𝙄𝙏𝙊 | 𝙎𝙐𝘾𝘾𝙀𝙎𝙎* ⊱💚⊱╮
 
 ╭━━━[ *USUARIO(A) | USER* ]━━━━⬣
 │ *Nombre | Name:* ${name}
 │ *Edad | Age:* ${age}  
 ╰━━━━━━━━━━━━━━━━━━⬣
 *Número de serie | Serial number*
-${sn}
-`, gt , `☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤 | 𝙂𝙤 𝙩𝙤 𝙨𝙩𝙖𝙧𝙩`, '.menu',  m))
+${sn}`, gt , `☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤 | 𝙂𝙤 𝙩𝙤 𝙨𝙩𝙖𝙧𝙩`, '.menu',  m))
 }
 handler.help = ['registrar | register | reg'].map(v => v + ' *nombre.edad*')
 handler.tags = ['xp']
