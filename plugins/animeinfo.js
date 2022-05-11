@@ -22,8 +22,8 @@ let handler = async (m, { conn, text }) => {
 🌐 *URL*: ${url}`
   conn.sendFile(m.chat, image_url, '', animeingfo, m)
 }
-handler.help = ['anime <judul>']
-handler.tags = ['internet']
-handler.command = /^(animeinfo)$/i
+handler.help = ['buscaranime | animeinfo *texto*']
+handler.tags = ['anime']
+handler.command = /^(animeinfo|buscaranime|infoanime|animebuscar)$/i
 //maapin fatur :<
 module.exports = handler
