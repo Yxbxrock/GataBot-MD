@@ -1,4 +1,4 @@
-let handler = async m => 
+let handler = async (m, { conn }) => {
 m.reply(conn.sendBut(m.chat, `
 ┏ ┅ ━━━━━━━━━━━━ ┅ ━
 ┇       *「 ANIME LINK 」*
@@ -46,6 +46,7 @@ m.reply(conn.sendBut(m.chat, `
 ┃ ❖ https://myanimelist.net
 ┗ ┅ ━━━━━━━━━━━ ┅ ━
 `, gt , `☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤 | 𝙂𝙤 𝙩𝙤 𝙨𝙩𝙖𝙧𝙩`, '.menu',  m)) // Tambah sendiri kalo mau
+}  
 handler.help = ['animelink']
 handler.tags = ['anime']
 handler.command = /^animelink$/i
