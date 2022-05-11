@@ -1,8 +1,9 @@
 let handler = async (m, { conn }) => {
 m.reply(conn.sendBut(m.chat, `
-┏ ┅ ━━━━━━━━━━━━ ┅ ━
-┇       *「 ANIME LINK 」*
-┣ ┅ ━━━━━━━━━━━━ ┅ ━
+╭━━〔 *ANIME LINK* 〕━━━━⬣
+┃𓃠 *Versión de GataBot-MD*
+┃➥ ${vs}   
+━━━━━━━━━━━━━━━━━━⬣
 ┃ ❖ https://kusonime.com
 ┃ ❖ https://anoboy.media
 ┃ ❖ https://oploverzz.net
@@ -44,12 +45,13 @@ m.reply(conn.sendBut(m.chat, `
 ┃ ❖ https://kazefuri.net
 ┃ ❖ https://haruzorasubs.net
 ┃ ❖ https://myanimelist.net
-┗ ┅ ━━━━━━━━━━━ ┅ ━
+╰━━━━━━━━━━━━━━━━━━⬣
 `, gt , `☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤 | 𝙂𝙤 𝙩𝙤 𝙨𝙩𝙖𝙧𝙩`, '.menu',  m)) // Tambah sendiri kalo mau
 }  
-handler.help = ['animelink']
+handler.help = ['enlaceanime | animelink']
 handler.tags = ['anime']
-handler.command = /^animelink$/i
-handler.register =false
+handler.command = /^animelink|enlaceanime|linkanime|enlacesanimes|animesenlaces$/i
+handler.register = true
+handler.exp = 7
 
 module.exports = handler
