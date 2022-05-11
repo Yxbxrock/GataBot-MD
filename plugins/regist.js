@@ -3,7 +3,7 @@ let Reg = /\|?(.*)([.|] *?)([0-9]*)$/i
 let handler = async function (m, { text, usedPrefix }) {
   let user = global.db.data.users[m.sender]
   if (user.registered === true) throw `Ya estás registrado(a).\n_¿Quieres volver a registrarte?_ ${usedPrefix}unreg *SN|NÚMERO DE SERIE*\n\nv`
-  if (!Reg.test(text)) throw `╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\nFormato incorrecto\n*${usedPrefix}daftar nombre.edad*\n`
+  if (!Reg.test(text)) throw `╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\nFormato incorrecto\n*${usedPrefix}registrar nombre.edad*\nIncorrect format\n*${usedPrefix}daftar name.age`
   let [_, name, splitter, age] = text.match(Reg)
   if (!name) throw '╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n*El nombre no puede estar vacío.*\nThe name cannot be empty.'
   if (!age) throw '╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n*La edad no puede estar vacía.*\nAge cannot be empty.'
@@ -15,18 +15,18 @@ let handler = async function (m, { text, usedPrefix }) {
   user.regTime = + new Date
   user.registered = true
   let sn = createHash('md5').update(m.sender).digest('hex')
-  m.reply(`
-Daftar berhasil!
+  m.reply(conn.sendBut(m.chat, `
+╰⊱💚⊱ *𝙀́𝙓𝙄𝙏𝙊 | 𝙎𝙐𝘾𝘾𝙀𝙎𝙎* ⊱💚⊱╮
 
-╭─「 USUARIO(A) | USER 」
+╭━━━━[ *USUARIO(A) | USER* ]━━━━━⬣
 │ *Nombre | Name:* ${name}
 │ *Edad | Age:* ${age}  
-╰────
-Serial Number: 
+╰━━━━━━━━━━━━━━━━━━⬣
+*Número de serie | Serial number*
 ${sn}
-`.trim())
+`, gt , `☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤 | 𝙂𝙤 𝙩𝙤 𝙨𝙩𝙖𝙧𝙩`, '.menu',  m))
 }
-handler.help = ['registrar | register | reg'].map(v => v + ' nombre.edad')
+handler.help = ['registrar | register | reg'].map(v => v + ' *nombre.edad*')
 handler.tags = ['xp']
 
 handler.command = /^(registrar|registar|daftar|reg(ister)?)$/i
