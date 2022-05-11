@@ -8,8 +8,8 @@ let handler = async function (m, { text, usedPrefix }) {
   if (!name) throw '╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n*El nombre no puede estar vacío.*\nThe name cannot be empty.'
   if (!age) throw '╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n*La edad no puede estar vacía.*\nAge cannot be empty.'
   age = parseInt(age)
-  if (age > 120) throw '╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n*Mucha edad 😹*\nVery old 😹'
-  if (age < 10) throw '╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n*Es muy poca edad 🙀*\nIt is very young 🙀'
+  if (age > 120) throw '╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n*Mucha edad 😹*\n*Very old* 😹'
+  if (age < 10) throw '╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n*Es muy poca edad 🙀*\n*It is very young* 🙀'
   user.name = name.trim()
   user.age = age
   user.regTime = + new Date
@@ -18,7 +18,7 @@ let handler = async function (m, { text, usedPrefix }) {
   m.reply(conn.sendBut(m.chat, `
 ╰⊱💚⊱ *𝙀́𝙓𝙄𝙏𝙊 | 𝙎𝙐𝘾𝘾𝙀𝙎𝙎* ⊱💚⊱╮
 
-╭━━━━[ *USUARIO(A) | USER* ]━━━━━⬣
+╭━━━[ *USUARIO(A) | USER* ]━━━━⬣
 │ *Nombre | Name:* ${name}
 │ *Edad | Age:* ${age}  
 ╰━━━━━━━━━━━━━━━━━━⬣
