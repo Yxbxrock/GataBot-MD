@@ -1,4 +1,5 @@
-let handler = async m => m.reply(`
+let handler = async m => 
+m.reply(conn.sendBut(m.chat, `
 ┏ ┅ ━━━━━━━━━━━━ ┅ ━
 ┇       *「 ANIME LINK 」*
 ┣ ┅ ━━━━━━━━━━━━ ┅ ━
@@ -44,7 +45,7 @@ let handler = async m => m.reply(`
 ┃ ❖ https://haruzorasubs.net
 ┃ ❖ https://myanimelist.net
 ┗ ┅ ━━━━━━━━━━━ ┅ ━
-`.trim()) // Tambah sendiri kalo mau
+`, gt , `☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤 | 𝙂𝙤 𝙩𝙤 𝙨𝙩𝙖𝙧𝙩`, '.menu',  m)) // Tambah sendiri kalo mau
 handler.help = ['animelink']
 handler.tags = ['anime']
 handler.command = /^animelink$/i
