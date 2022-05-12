@@ -23,7 +23,7 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
             body: 'Now Playing...',
             description: 'Now Playing...',
             mediaType: 2,
-          thumbnail: await (await fetch('https://i.ibb.co/jy4BM3d/gata.jpg')).buffer(),
+          thumbnail: await (await fetch('https://camo.githubusercontent.com/238f96c61a8a77c196035e240bc6f883aca3b529bd48f6b3e5756e04286a2acf/68747470733a2f2f692e696d6775722e636f6d2f38664b346836462e6a7067')).buffer(),
          mediaUrl: `https://youtu.be/85xI8WFMIUY`
         }
      }
