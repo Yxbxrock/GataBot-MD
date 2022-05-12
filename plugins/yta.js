@@ -24,7 +24,7 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
             description: 'Now Playing...',
             mediaType: 2,
           thumbnail: await (await fetch('https://telegra.ph/file/76f08bd0aeb06c3e0c0d5.jpg')).buffer(),
-         mediaUrl: `https://youtu.be/85xI8WFMIUY`
+         mediaUrl: `https://www.youtube.com/watch?v=85xI8WFMIUY`
         }
      }
   })
