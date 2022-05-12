@@ -1,7 +1,7 @@
 # ⚠️ Esta versión de GataBot no esta terminada.
 
 <p align="center">
-<img src="https://i.imgur.com/8fK4h6F.jpg" alt="GataBot-MD" width="500"/>
+<img src="https://i.imgur.com/WwxBm8o.jpg" alt="GataBot-MD" width="900"/>
 </p>
 <p align="center">
 <a href="#"><img title="GataBot-MD" src="https://img.shields.io/badge/SI TE AGRADA EL REPOSITORIO APOYAME CON UNA 🌟 ¡GRACIAS! -red?colorA=%255ff0000&colorB=%23017e40&style=for-the-badge"></a> 
@@ -22,7 +22,7 @@
 ---
 
 # GataBot-MD 🐈
-> #### 🚀 Versión actual: 1.0.10
+> #### 🚀 Versión actual: 1.0.12
 > 
 ## ❇️ Información
 > SE ESTÁ USANDO WHATSAPP CON UNA BIBLIOTECA DE BAILEYS.
