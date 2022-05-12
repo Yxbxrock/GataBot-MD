@@ -23,7 +23,7 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
             body: 'Now Playing...',
             description: 'Now Playing...',
             mediaType: 2,
-          thumbnail: await (await fetch('https://i.imgur.com/WwxBm8o.jpeg')).buffer(),
+          thumbnail: await (await fetch('https://i.imgur.com/WwxBm8o.jpg')).buffer(),
          mediaUrl: `https://youtu.be/85xI8WFMIUY`
         }
      }
