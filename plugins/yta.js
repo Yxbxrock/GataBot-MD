@@ -23,7 +23,7 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
             body: 'Now Playing...',
             description: 'Now Playing...',
             mediaType: 2,
-          thumbnail: await (await fetch('https://i.imgur.com/WwxBm8o.jpg')).buffer(),
+          thumbnail: await (await fetch('https://telegra.ph/GataBot-MD-05-12')).buffer(),
          mediaUrl: `https://www.youtube.com/watch?v=85xI8WFMIUY&t=1s`
         }
      }
