@@ -6,7 +6,7 @@ handler.tags = ['anime']
 handler.command = /^(elf)$/i
 
 module.exports = handler
-*/
+
 
 let fetch = require('node-fetch')
 let handler = async (m, { conn }) => {
@@ -21,3 +21,13 @@ handler.tags = ['anime']
 handler.command = /^(elf)$/i
 
 module.exports = handler
+*/
+let fetch = require('node-fetch')
+     let handler  = async (m, { conn, usedPrefix, command }) => {
+    heum = await fetch(`https://api.lolhuman.xyz/api/random/elf?apikey=6fbee8ec83e7b2677026ffae`)
+    json = await heum.buffer()
+   conn.sendButtonImg(m.chat, json, '☘ *Si la vida continua tal como quieres que sea, debe ser un sueño*', 'Gata Dios', '🔄 SIGUIENTE', `${usedPrefix + command}`, m, false)
+}
+handler.help = ['elf']
+handler.tags = ['anime']
+handler.command = /^(elf)$/i
