@@ -26,7 +26,7 @@ let handler  = async (m, { conn, text }) => {
 }
 
 handler.help = ['cat']
-handler.tags = ['random']
+handler.tags = ['anime']
 handler.command = /^cat|gato|gata|Cat|Gato|Gata$/i
 
 handler.fail = null
