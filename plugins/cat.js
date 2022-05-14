@@ -16,7 +16,7 @@ handler.tags = ['anime']
 handler.command = /^cat$/i
 handler.fail = null
 export default handler
-*/
+
 
 //created by Scooppt
 let fetch = require('node-fetch')
@@ -40,4 +40,15 @@ handler.help = ['cat']
 handler.tags = ['anime']
 handler.command = /^cat$/i
 handler.fail = null
+export default handler
+*/
+
+import axios from "axios"
+let handler = async (m, {command, conn}) => {
+if (command == 'akira') {
+let haha = await conn.getFile(`https://api-reysekha.herokuapp.com/api/wallpaper/akira?apikey=APIKEY`)
+conn.sendButton(m.chat, `_${command}_`.trim(), author, haha.data, [['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🔄', `/${command}`]], m)}
+ }
+handler.command = handler.help = ['akira']
+handler.tags = ['anime']
 export default handler
