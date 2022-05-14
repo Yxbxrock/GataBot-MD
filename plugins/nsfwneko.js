@@ -8,27 +8,11 @@ handler.command = /^(nsfwneko)$/i
 module.exports = handler
 */
 
-//created by Scooppt
 let fetch = require('node-fetch')
-
-let handler  = async (m, { conn, text }) => {
-  try {
-     let res = await fetch('https://cataas.com/cat')
-     let img = await res.buffer()
-     let caption = `
-🐈 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨 🐈
-`.trim()
-    conn.sendFile(m.chat, img, 'cat.jpg', caption, m)
-   } catch (e) {
-        console.log(e)
-        throw '_*Erro!*_'
-    }
+     let handler  = async (m, { conn, usedPrefix, command }) => {
+    heum = await fetch(`https://api-reysekha.herokuapp.com/api/wallpaper/jeni?apikey=APIKEY`)
+    json = await heum.buffer()
+   conn.sendButtonImg(m.chat, json, '💫 *Como las estrellas sobre las nubes*', 'Gata Dios', '🔄 SIGUIENTE', `${usedPrefix + command}`, m, false)
 }
-
-handler.help = ['cat']
-handler.tags = ['anime']
-handler.command = /^cat|gato|gata|Cat|Gato|Gata$/i
-
-handler.fail = null
-
+handler.command = /^(jeni|jenni|jennie|Jeni|Jenni)$/i
 module.exports = handler
