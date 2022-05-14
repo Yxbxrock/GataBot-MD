@@ -8,7 +8,6 @@ handler.command = /^(nsfwneko)$/i
 module.exports = handler
 */
 
-let fetch = require('node-fetch')
      let handler  = async (m, { conn, usedPrefix, command }) => {
     heum = await fetch(`https://api-reysekha.herokuapp.com/api/wallpaper/jeni?apikey=APIKEY`)
     json = await heum.buffer()
