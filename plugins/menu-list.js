@@ -16,34 +16,34 @@ let { perfomance } = require('perf_hooks')
 let moment = require('moment-timezone')
 const defaultMenu = {
   before:`
-╭━━「 *𝙋𝙖𝙣𝙚𝙡 | 𝘿𝙖𝙨𝙝𝙗𝙤𝙖𝙧𝙙* 」━━━⬣
-┃𓃠 *Versión de GataBot-MD*
+╭━━「 *karyl* 」━━━⬣
+┃𓃠 *Versi bot*
 ┃➺ ${vs}
-┃━━━━ 「 𝙃𝙤𝙮 | 𝙏𝙤𝙙𝙖𝙮 」━━━━⬣
-┃ღ *Fecha | Date*
+┃━━━━ 「 Date 」━━━━⬣
+┃ღ *Date*
 ┃➺ %week %date
 ┃ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ღ *Fecha Islámica | Islamic Date*
+┃ღ *slamic Date*
 ┃➺ %dateIslamic
 ┃ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ღ *Tiempo | Time*
+┃ღ *Time*
 ┃➺ %time
 ╰━━━━━━━━━━━━━━━━⬣
-╭━━「 *𝙐𝙨𝙪𝙖𝙧𝙞𝙤(𝙖) | 𝙐𝙨𝙚𝙧* 」━━━⬣
-┃ღ *Nombre | Name*:
+╭━━「 *info user* 」━━━⬣
+┃ღ *Name*:
 ┃➺ %name
 ┃ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ღ *Estado | Status*: --
+┃ღ *Status*: --
 ┃ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ღ *Límite | Limit*: %limit
+┃ღ *Limit*: %limit
 ┃ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ღ *Dinero | Money*: %money
+┃ღ *Money*: %money
 ┃ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ღ *Experiencia | Exp*: %totalexp
+┃ღ *Exp*: %totalexp
 ┃ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ღ *Nivel | Level*: %level
+┃ღ *Level*: %level
 ┃ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ღ *Rol:*: %role
+┃ღ *Role:*: %role
 ╰━━━━━━━━━━━━━━━━⬣
 ╭━━━「 *INFO CMD* 」━━━━━⬣
 ┃ *Ⓟ* = Premium
@@ -240,59 +240,59 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
         listMessage: {
             title: `╭─────────────────────❀\n│${ucapan()}\n│💖•.¸💝¸.• *${name}* •.¸💝¸.•💖\n╰─────────────────────❀`,
             description: `╭━━━━━━〔 *${wm}* 〕━━━━━━⬣	    
-┃✪ *Tiempo Actual | Current Time*	    
+┃✪ *Current Time*	    
 ┃➺ ${time}   
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Activa durante | Active during* 
+┃✪ *Active during* 
 ┃➺ ${uptime}
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Versión de GataBot-MD*
+┃✪ *Version*
 ┃➺ ${vs}
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Usuario(s) | Users*
+┃✪ *Users*
 ┃➺ ${Object.keys(global.db.data.users).length} 
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Modo | Mode*
+┃✪ *Mode*
 ┃➺ ${global.opts['self'] ? 'Self' : 'publik'}
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Chat(s) Prohibido(s) | Forbidden Chats*
+┃✪ *Forbidden Chats*
 ┃➺ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Usuario(s) Prohibido(s) | Prohibited Users*
+┃✪ *prohibited Users*
 ┃➺ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
 ╰━━━━━━━━━━━━━━━━━━━━━⬣`,
-            buttonText: '𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝙈𝙀𝙉𝙐 | 𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐',
+            buttonText: 'SELECT MENU',
             listType: 1,
             footerText: "*PRESIONE ESTE MENSAJE PARA IR AL MENÚ.*\n*PRESS THIS MESSAGE TO GO TO THE MENU.*",
             mtype: 'listMessage',
             sections: [
               {
                 "rows": [{
-                  "title": `𝘾𝙤𝙣𝙩𝙖𝙘𝙩𝙤 | 𝙊𝙬𝙣𝙚𝙧`,
-                  "description": "GataBot-MD no responde a dudas. Solo Gata Dios.\nGataBot-MD does not answer questions. Only Gata Dios.",
+                  "title": `OWNER`,
+                  "description": "owner contact",
                   "rowId": `.owner`
                 },{
-                  "title": "𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙘𝙞𝙤́𝙣 𝙙𝙚 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | 𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙩𝙞𝙤𝙣",
-                  "description": "Conoce más del menú.\nLearn more about the menu.",
+                  "title": "INFO",
+                  "description": "Learn more about the menu.",
                   "rowId": `${_p}? info`
                 }],	      
                 "title": "INFORMASI BOT",
               }, {
                 "rows": [{
-		  "title": "☰ 𝙑𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙 𝙙𝙚 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | 𝙎𝙥𝙚𝙚𝙙",
-                  "description": "Comprueba la rapidez.\nCheck the speed.",
+		  "title": "☰ SPEED",
+                  "description": "Check the speed.",
                   "rowId": `.ping` 
 		  }, {
-                  "title": `☰ 𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪`,
-                  "description": "Presentación de todo el Menú.\nPresentation of the entire Menu.",
+                  "title": "☰ ALL MENU",
+                  "description": "Presentation of the entire Menu.",
                   "rowId": `.allmenu`
                   }, {
-                  "title": "☰ 𝘼𝙪𝙨𝙚𝙣𝙩𝙚 & 𝙑𝙤𝙩𝙤 | 𝘼𝙗𝙨𝙚𝙣𝙩𝙚𝙚 & 𝙑𝙤𝙩𝙚",
-                  "description": "Mostrando el Menú Ausente.\nShowing the Absent Menu.",
+                  "title": "☰ MENU ABSEN",
+                  "description": "Showing the Absent Menu.",
                   "rowId": `${_p}? absen`
                 }, {
-                  "title": "☰ 𝘼𝙣𝙞𝙢𝙚 𝙈𝙚𝙣𝙪.",
-                  "description": "Mostrar menú animado.\nShow Animated Menu",
+                  "title": "☰ ANIME.",
+                  "description": "Show Animated Menu",
                   "rowId": `${_p}? anime`
                 }, {
                   "title": "☰ STICKER & CONVERTER",
@@ -456,33 +456,33 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
            hydratedFooterText: wm,
            hydratedButtons: [{*/
             urlButton: {
-               displayText: '𝙂𝙞𝙩𝙃𝙪𝙗',
+               displayText: 'Github',
                url: 'https://github.com/GataNina-Li/GataBot-MD'	       
 		}
            },
              {
               urlButton: {
-               displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢',
-               url: 'https://instagram.com/gata_dios'	           
+               displayText: 'Instagram,
+               url: 'https://instagram.com/frmndaa.___'	           
              }
 
            },
              {
               quickReplyButton: {
-               displayText: '𝘾𝙤𝙣𝙩𝙖𝙘𝙩𝙤',
+               displayText: 'OWNER',
                id: '.owner',
              }
 
            },
            {
              quickReplyButton: {
-               displayText: '𝙋𝙚𝙧𝙛𝙞𝙡 | 𝙋𝙧𝙤𝙛𝙞𝙡𝙚',
+               displayText: 'PROFILE',
                id: '.profile',
              }
 	   },
            {
              quickReplyButton: {
-               displayText: '𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪',
+               displayText: 'Menu',
                id: '.menu',
              }
            }]
@@ -528,18 +528,18 @@ function clockString(ms) {
 }
 function ucapan() {
   const time = moment.tz('America/Los_Angeles').format('HH')  //America/Los_Angeles  Asia/Jakarta   America/Toronto
-  res = "👋 *BIENVENIDO(A) | WELCOME* 👋"
+  res = "👋 *WELCOME* 👋"
   if (time >= 4) {
-    res = "🌇 *Buenos Días | Good Morning* ⛅"
+    res = "🌇 *Good Morning* ⛅"
   }
   if (time >= 11) {
-    res = "🏙️ *Buenas Tardes | Good Afternoon* 🌤️"
+    res = "🏙️ *Good Afternoon* 🌤️"
   }
   if (time >= 15) {
-    res = "🌆 *Buenas tardes | Good Afternoon* 🌥️"
+    res = "🌆 *Good Afternoon* 🌥️"
   }
   if (time >= 17) {
-    res = "🌃 *Buenas noches | Good Evening* 💫"
+    res = "🌃 *Good Evening* 💫"
   }
   return res
 }
