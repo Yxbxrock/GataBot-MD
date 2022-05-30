@@ -56,9 +56,9 @@ ${vid.url}*/
            hydratedContentText: anu,
            locationMessage: { 
            jpegThumbnail: await (await fetch(thumb)).buffer() }, 
-           hydratedFooterText: `si el video no coincide escriba 
-.yta enlace de YouTube para descargar el audio y escriba 
-.ytv enlace YouTube para descargar video`,
+           hydratedFooterText: `
+
+`
            hydratedButtons: [{
              urlButton: {
                displayText: 'instagram',
