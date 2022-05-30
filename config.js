@@ -1,4 +1,4 @@
-global.owner = ['14504976783', '593968585383'] // Pon tu número aquí
+global.owner = ['6282365089294']// Pon tu número aquí
 global.mods = [] // ¿Quieres ayuda?
 global.prems = [] // El usuario Premium tiene un límite ilimitado
 global.APIs = { // API Prefix
@@ -42,8 +42,8 @@ global.APIKeys = { // APIKey Here
 
 // Sticker WM
 global.stiker_wait = 'Stiker sedang dibuat'
-global.packname = 'stickerby'
-global.author = `𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿`
+global.packname = 'created by'
+global.author = '@frmndaa'
 global.wm = '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿'
 global.watermark = wm
 global.vs = '1.0.12'
