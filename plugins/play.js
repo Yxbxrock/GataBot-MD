@@ -8,7 +8,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   let chat = global.db.data.chats[m.chat]
   let results = await yts(text)
   let vid = results.all.find(video => video.seconds < 3600)
-  if (!vid) throw '╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n*Contenido no encontrado*\n*Content not found*'
+  if (!vid) throw '╰⊱❌⊱ *© karyl* ⊱❌⊱╮\n\n*Content not found*'
   let isVideo = /2$/.test(command)
   let yt = false
   let yt2 = false
@@ -21,22 +21,22 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
       usedServer = server
       break
     } catch (e) {
-      m.reply(`╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n*Servidor | Server* !${server} ${servers.length >= i + 1 ? '' : '\n*Vuelva a intentar o informe el error.*\n*Please try again or report the error to fix it.*'}`)
+      m.reply(`╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n*Servidor | Server* !${server} ${servers.length >= i + 1 ? '' : '\n*Please try again or report the error to fix it.*'}`)
     }
   }
-  if (yt === false) throw '╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n*Todos los servidores fallaron.*\n*All servers failed.*'
-  if (yt2 === false) throw '╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n*Todos los servidores fallaron.*\n*All servers failed.*'
+  if (yt === false) throw 'All servers failed.'
+  if (yt2 === false) throw 'All servers failed.'
   let { dl_link, thumb, title, filesize, filesizeF, } = yt
 let anu =  `╭━━━━━━━━━━━━━━━━⬣
-┃ 💖  *Título | Title* 
+┃ 💖  *Title* 
 ┃ ➲ ${title}
-┃ 🔊 *Tamaño del Audio | Audio Size* 
+┃ 🔊*Audio Size* 
 ┃ ➲ ${filesizeF}
-┃ 🎞 *Tamaño del vídeo | Video Size* 
+┃ 🎞 *Video Size* 
 ┃ ➲ ${yt2.filesizeF}
-┃ 💻 *Servidor | Server* 
+┃ 💻 *Server* 
 ┃ ➲ ${usedServer}
-┃ 🎁 *Enlace | Link* 
+┃ 🎁 *Link* 
 ┃ ➲ ${vid.url}
 ╰━━━━━━━━━━━━━━━━⬣ 
 `
@@ -61,7 +61,7 @@ ${vid.url}*/
 .ytv enlace YouTube para descargar video`,
            hydratedButtons: [{
              urlButton: {
-               displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢',
+               displayText: 'instagram',
                url: instagram
 //aqui
 
@@ -70,21 +70,21 @@ ${vid.url}*/
            },
                {
              quickReplyButton: {
-               displayText: '𝙑𝙞𝙙𝙚𝙤 360𝙥',
+               displayText: '360p',
                id: `.ytmp4 ${vid.url}`,
              }
 
             },
                {
              quickReplyButton: {
-               displayText: '𝙑𝙞𝙙𝙚𝙤 720𝙥',
+               displayText: '720p',
                id: `.ytv720 ${vid.url}`,
              }
 
             },
                {
              quickReplyButton: {
-               displayText: '𝘼𝙪𝙙𝙞𝙤',
+               displayText: 'audio',
                id: `.ytmp3 ${vid.url}`,
              }
 
