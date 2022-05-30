@@ -14,9 +14,9 @@ const q = {
 	"participant": "0@s.whatsapp.net"
 }
 
-conn.sendContact(m.chat, '14509544207', 'Gata Dios', m) 
-conn.sendContact(m.chat, '593993684821', 'Oficial GataBot', m)
-m.reply(conn.sendBut(m.chat, `🧡 *Eso son los contactos para ti*\n💜 *That's the contacts for you*`, gt , `☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤 | 𝙂𝙤 𝙩𝙤 𝙨𝙩𝙖𝙧𝙩`, '.menu',  m))
+conn.sendContact(m.chat, '6282365089294', 'frmndaa', m) 
+
+m.reply(conn.sendBut(m.chat, `itu nomor owner ku`, gt , `☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤 | 𝙂𝙤 𝙩𝙤 𝙨𝙩𝙖𝙧𝙩`, '.menu',  m))
 }
 handler.help = ['creadora | creador | owner']
 handler.tags = ['info']
