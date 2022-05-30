@@ -263,12 +263,12 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
 ╰━━━━━━━━━━━━━━━━━━━━━⬣`,
             buttonText: 'SELECT MENU',
             listType: 1,
-            footerText: "*PRESIONE ESTE MENSAJE PARA IR AL MENÚ.*\n*PRESS THIS MESSAGE TO GO TO THE MENU.*",
+            footerText: "*RESS THIS MESSAGE TO GO TO THE MENU.*",
             mtype: 'listMessage',
             sections: [
               {
                 "rows": [{
-                  "title": `OWNER`,
+                  "title": "owner",
                   "description": "owner contact",
                   "rowId": `.owner`
                 },{
@@ -462,7 +462,7 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
            },
              {
               urlButton: {
-               displayText: 'Instagram,
+               displayText: 'Instagram',
                url: 'https://instagram.com/frmndaa.___'	           
              }
 
