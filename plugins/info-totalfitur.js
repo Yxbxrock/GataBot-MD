@@ -3,10 +3,10 @@ let totalf = Object.values(global.plugins).filter(
     (v) => v.help && v.tags
   ).length;
 m.reply(conn.sendBut(m.chat, `╭━━━〔𝙏𝙊𝙏𝘼𝙇 | 𝙏𝙊𝙏𝘼𝙇𝙁𝙀𝘼𝙏𝙐𝙍𝙀〕━━━⬣ 
-┃𓃠 *Versión de GataBot-MD*
+┃𓃠 *Version*
 ┃➺ ${vs}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ *Características totales actualmente*
+┃ *total fitur*
 ┃➺ ${totalf}
 ┃ *Total features currently*
 ┃➺ ${totalf}
