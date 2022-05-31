@@ -15,20 +15,20 @@ let uptime = clockString(_uptime)
 bear = "Source Code"
 ye = `Wa.me/${m.sender.split`@`[0]}`
 let esce = `╭━━━━[ *𝙀𝙎𝙏𝘼𝘿𝙊 | 𝙎𝙏𝘼𝙏𝙐𝙎* ]━━━━━⬣
-┃💗 *¡Hola | Hi!* ${ye} 
+┃💗 *Hi!* ${ye} 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃𓃠 *Versión de GataBot-MD*
+┃𓃠 *Version*
 ┃➥ ${vs}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ღ *Activo Durante | Active During* 
+┃ღ *Active During* 
 ┃➥ ${uptime}
-┃ღ *Modo | Mode:* 
+┃ღ *Mode:* 
 ┃➥ ${global.opts['self'] ? 'Self' : 'publik'}
-┃ღ *Usuario(s) | Users* 
+┃ღ *Users* 
 ┃➥ ${Object.keys(global.db.data.users).length} 
-┃ღ *Chat(s) Prohibido(s) | Forbidden Chats*
+┃ღ *Forbidden Chats*
 ┃➥ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
-┃ღ *Usuario(s) Prohibido(s) | Prohibited Urs*
+┃ღ *Prohibited Urs*
 ┃➥ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} 
 ╰━━━━━━━━━━━━━━━━━━⬣`/*const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
@@ -47,31 +47,31 @@ let message = await prepareWAMessageMedia({ image: fs.readFileSync('./media/menu
            hydratedFooterText: gt,
            hydratedButtons: [{
              urlButton: {
-               displayText: '𝙂𝙞𝙩𝙃𝙪𝙗',
+               displayText: 'Github',
                url: "https://github.com/GataNina-Li/GataBot-MD"
               }   
             },
               {
               urlButton: {
-               displayText: '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢',
+               displayText: 'instagram',
                url: instagram	           
              }
            },
 			     {
              quickReplyButton: {
-               displayText: '𝙑𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙 | 𝙎𝙥𝙚𝙚𝙙',
+               displayText: 'Speed',
                id: '.ping',
              }
 	   },
              {
              quickReplyButton: {
-               displayText: '𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪',
+               displayText: 'All menu',
                id: '.allmenu',
              }
 	   },
              {
              quickReplyButton: {
-               displayText: '𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪',
+               displayText: 'Menu',
                id: '.menu',
              }
           }]
