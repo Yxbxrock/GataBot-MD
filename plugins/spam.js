@@ -17,6 +17,6 @@ handler.help = ['spamwa nomor|pesan|jumlah']
 handler.tags = ['tools']
 handler.command = /^spam(wa)?$/i
 
-handler.premium = false
+handler.premium = true
 
 module.exports = handler
