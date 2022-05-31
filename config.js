@@ -42,9 +42,9 @@ global.APIKeys = { // APIKey Here
 
 // Sticker WM
 global.stiker_wait = 'Stiker sedang dibuat'
-global.packname = 'created by'
+global.packname = 'Created By'
 global.author = '@frmndaa'
-global.wm = '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿'
+global.wm = 'Karyl-Bot'
 global.watermark = wm
 global.vs = '1.0.12'
 global.version = vs
