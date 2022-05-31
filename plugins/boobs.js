@@ -7,7 +7,7 @@ if (!db.data.chats[m.chat].nsfw && m.isGroup) throw 'Feature Nsfw Disable\nType 
    conn.sendFile(m.chat, json, 'boobs.jpg', 'Wangy wangy wangy', m, false)
 }
 handler.help = ['boobs','oppai', 'milf']
-handler.tags = ['hentai']
+handler.tags = ['anime']
 handler.command = /^(boobs|oppai|milf)$/i
 handler.owner = false
 handler.mods = false
