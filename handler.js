@@ -746,16 +746,16 @@ Untuk mematikan fitur ini, ketik
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: '*_This command can only be used by My Creator!!*_',
-        owner: '*_This command can only be used by Owner Bot!!*_',
-        mods: '*_This command can only be used by Moderator!!*_',
-        premium: '*_This command is only for Premium members!!*_',
-        group: '*_This command can only be used in groups!!*_',
-        private: '*_This command can only be used in private chatc',
-        admin: '*_This command is for Administrators only!!*_',
-        botAdmin: '*_Make the bot an Admin to use this command!!*_',
-        unreg: '*_Sign up to use this feature by typing:*\n*#daftar name.age*\n*Example: #daftar GataDios.18*',
-        restrict: '*_This feature is disabled | disable!!*_'
+        rowner: '_*This command can only be used by My Creator!!*_',
+        owner: '_*This command can only be used by Owner Bot!!*_',
+        mods: '_*This command can only be used by Moderator!!*_',
+        premium: '_*This command is only for Premium members!!*_',
+        group: '_*This command can only be used in groups!!*_',
+        private: '_*This command can only be used in private chatc',
+        admin: '_*This command is for Administrators only!!*_',
+        botAdmin: '_*Make the bot an Admin to use this command!!*_',
+        unreg: '_*Sign up to use this feature by typing:*\n*#daftar name.age*\n*Example: #daftar GataDios.18*',
+        restrict: '_*This feature is disabled | disable!!*_'
     }[type]
     if (msg) return m.reply(msg)
 }
