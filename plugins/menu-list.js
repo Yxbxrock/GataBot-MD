@@ -285,7 +285,7 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
 		  }, {
                   "title": "☰ ALL MENU",
                   "description": "Presentation of the entire Menu.",
-                  "rowId": `.allmenu`
+                  "rowId": `${_p}? all`
                   }, {
                   "title": "☰ MENU ABSEN",
                   "description": "Showing the Absent Menu.",
