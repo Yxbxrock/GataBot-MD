@@ -263,7 +263,7 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
 ╰━━━━━━━━━━━━━━━━━━━━━⬣`,
             buttonText: 'SELECT MENU',
             listType: 1,
-            footerText: "*RESS THIS MESSAGE TO GO TO THE MENU.*",
+            footerText: "*PRESS THIS MESSAGE TO GO TO THE MENU.*",
             mtype: 'listMessage',
             sections: [
               {
