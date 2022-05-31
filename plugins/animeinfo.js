@@ -1,7 +1,7 @@
 let fetch = require('node-fetch')
 let cheerio = require('cheerio')
 let handler = async (m, { conn, text }) => {
-  if (!text) throw `╰⊱❗️⊱ *𝙇𝙊 𝙐𝙎𝙊́ 𝙈𝘼𝙇 | 𝙐𝙎𝙀𝘿 𝙄𝙏 𝙒𝙍𝙊𝙉𝙂* ⊱❗️⊱╮\n\n🔎 *Ingrese el nombre del anime a buscar.*\n🎁 *Enter the name of the anime to search for.*`
+  if (!text) throw `*Enter the name of the anime to search for.*`
   let res = await fetch(global.API('https://api.jikan.moe', '/v3/search/anime', { q: text }))
   if (!res.ok) throw await res.text()
   let json = await res.json()
@@ -22,7 +22,7 @@ let handler = async (m, { conn, text }) => {
 🌐 *URL*: ${url}`
   conn.sendFile(m.chat, image_url, '', animeingfo, m)
 }
-handler.help = ['buscaranime | animeinfo *texto*']
+handler.help = ['animeinfo *text*']
 handler.tags = ['anime']
 handler.command = /^(animeinfo|buscaranime|infoanime|animebuscar)$/i
 //maapin fatur :<
